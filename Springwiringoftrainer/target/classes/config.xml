@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  <bean class="com.example.spring.Springwiringoftrainer.Kodnestclasses" id="kodclass">
+  <property name="tr" ref="train1"></property>
+  </bean>
+  <bean class="com.example.spring.Springwiringoftrainer.Trainer" id="train1">
+  <property name="t_id" value="1"></property>
+  <property name="t_name" value="ayush"></property>
+  </bean>
+  </beans>

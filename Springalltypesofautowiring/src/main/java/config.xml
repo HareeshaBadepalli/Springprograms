@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  
+  <bean class="com.example.autowiringspring.Springalltypesofautowiring.Driver" id="d2">
+  <property name="id" value="2"></property>
+  <property name="name" value="ramu"></property>
+  <property name="age" value="31"></property>
+  </bean>
+  <bean class="com.example.autowiringspring.Springalltypesofautowiring.Driver" id="d1">
+  <property name="id" value="1"></property>
+  <property name="name" value="rohit"></property>
+  <property name="age" value="21"></property>
+  </bean>
+  
+  <bean class="com.example.autowiringspring.Springalltypesofautowiring.Driver" id="dr">
+  <property name="id" value="3"></property>
+  <property name="name" value="raju"></property>
+  <property name="age" value="24"></property>
+  </bean>
+  
+  <bean class="com.example.autowiringspring.Springalltypesofautowiring.Professor">
+  <property name="p_id" value="11"></property>
+  <property name="p_name" value="ankit"></property>
+  <property name="p_subject" value="16"></property>
+  </bean>
+ 
+    <bean id="c3" class="com.example.autowiringspring.Springalltypesofautowiring.Car" autowire="byName">
+  </bean>
+
+    <bean id="c1" class="com.example.autowiringspring.Springalltypesofautowiring.Car" autowire="constructor">
+  </bean>
+ <bean id="uni1" class="com.example.autowiringspring.Springalltypesofautowiring.University" autowire="constructor"></bean>
+  </beans>
